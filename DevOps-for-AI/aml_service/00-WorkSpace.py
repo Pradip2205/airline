@@ -30,7 +30,7 @@ from azureml.core.authentication import AzureCliAuthentication
 
 print("SDK Version:", azureml.core.VERSION)
 # print('current dir is ' +os.curdir)
-with open("aml_config/config.json") as f:
+with open("DevOps-for-AI/aml_config/config.json") as f:
     config = json.load(f)
 
 workspace_name = config["workspace_name"]
