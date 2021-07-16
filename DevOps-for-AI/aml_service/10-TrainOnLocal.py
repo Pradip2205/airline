@@ -55,7 +55,7 @@ run_config_user_managed.environment.python.user_managed_dependencies = True
 
 print("Submitting an experiment.")
 src = ScriptRunConfig(
-    source_directory="./code",
+    source_directory="./DevOps-for-AI/code",
     script="training/train.py",
     run_config=run_config_user_managed,
 )
