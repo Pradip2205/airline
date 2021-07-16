@@ -28,4 +28,9 @@
 python --version
 pip install azure-cli==2.2.0
 pip install --upgrade azureml-sdk[cli]
-pip install -r requirements.txt
+pip install scipy==1.0.0
+pip install scikit-learn==0.19.1
+pip install numpy==1.19.5
+pip install pandas==0.24.2
+pip install statsmodels==0.11.1
+pip install pmdarima==1.2.0
