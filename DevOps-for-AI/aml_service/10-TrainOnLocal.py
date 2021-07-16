@@ -45,7 +45,7 @@ print(exp.name, exp.workspace.name, sep="\n")
 from azureml.core import Dataset
 
 blob_ds = ws.get_default_datastore()
-csv_paths = [(blob_ds, 'data/airline_passengers.csv')]
+csv_paths = [(blob_ds, 'DevOps-for-AI/data/airline_passengers.csv')]
 tab_ds = Dataset.Tabular.from_delimited_files(path=csv_paths)
 tab_ds = tab_ds.register(workspace=ws, name='airline')
 
@@ -77,5 +77,5 @@ if run.get_status() == "Failed":
 run_id = {}
 run_id["run_id"] = run.id
 run_id["experiment_name"] = run.experiment.name
-with open("aml_config/run_id.json", "w") as outfile:
+with open("DevOps-for-AI/aml_config/run_id.json", "w") as outfile:
     json.dump(run_id, outfile)
