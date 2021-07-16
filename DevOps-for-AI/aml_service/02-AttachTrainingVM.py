@@ -40,7 +40,7 @@ cli_auth = AzureCliAuthentication()
 ws = Workspace.from_config(auth=cli_auth)
 
 # Read the New VM Config
-with open("aml_config/security_config.json") as f:
+with open("DevOps-for-AI/aml_config/security_config.json") as f:
     config = json.load(f)
 
 remote_vm_name = config["remote_vm_name"]
