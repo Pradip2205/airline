@@ -49,7 +49,7 @@ warnings.filterwarnings("ignore")
 # Start recording results to AML
 # run = Run.start_logging(workspace = ws, history_name = run_history_name)
 run = Run.get_submitted_run()
-
+ws = Workspace.from_config()
 
 # Get a dataset from the workspace datasets collection
 dataset = ws.datasets['airline']
